@@ -14,6 +14,10 @@ metadata:
 spec:
   sources:
     - name: repo
+      sourceRefs:
+        - name: test
+          kind: GitSource
+          apiVersion: experimental.kontinue.io/v1
   steps:
     - name: configmap
       sources: [repo]
